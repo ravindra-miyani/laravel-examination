@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92faef804047461daba97bd82deb7232",
+    "content-hash": "90e63ff58e3d21f667c7572363ebe6cf",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1159,16 +1159,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8"
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e612609022e935f3d0337c1295176505b41188c8",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/97e59c7a16464196a8b9c77c47df68e4a39a45c4",
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4",
                 "shasum": ""
             },
             "require": {
@@ -1206,7 +1206,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-08-12T20:17:41+00:00"
+            "time": "2019-09-01T07:51:21+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2841,6 +2841,20 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27T11:13:29+00:00"
+        },
+        {
+            "name": "user_information/biodata",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/user_information/biodata",
+                "reference": "74c8bcda1f4b75e053622ac1b28b97810c3c97a1"
+            },
+            "type": "librrary",
+            "description": "Custom Package of Biodata",
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4628,7 +4642,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "user_information/biodata": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

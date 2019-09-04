@@ -1,0 +1,1 @@
+Route::get('biodata/{id}','user_information\biodata\BiodataController@index');
