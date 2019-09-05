@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90e63ff58e3d21f667c7572363ebe6cf",
+    "content-hash": "86994fb973c455f3cbd2353c2dd914a6",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2848,9 +2848,16 @@
             "dist": {
                 "type": "path",
                 "url": "packages/user_information/biodata",
-                "reference": "74c8bcda1f4b75e053622ac1b28b97810c3c97a1"
+                "reference": "798dbca3d2dafbc99035346a41d4037db12d02f4"
             },
             "type": "librrary",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "user_information\\biodata\\BiodataServiceProvider"
+                    ]
+                }
+            },
             "description": "Custom Package of Biodata",
             "transport-options": {
                 "symlink": true

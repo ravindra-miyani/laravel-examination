@@ -23,8 +23,7 @@ class BiodataServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        echo "Ravindra Miyani";exit;
-        include __DIR__.'/routes/web.php';
-        $this->app->make('user_information\biodata\BiodataController');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/views', 'biodata');
     }
 }

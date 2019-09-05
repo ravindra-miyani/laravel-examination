@@ -1,14 +1,22 @@
+<?php 
 namespace user_information\biodata;
+use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
-use Carbon\Carbon;
 
 class BiodataController extends Controller
 {
-
-    public function index($timezone)
+    public function __construct()
     {
-        echo "Ravindra Miyani"; //Carbon::now($timezone)->toDateTimeString();
+    	# code...
+    }
+
+    public function index()
+    {
+        $user_information = array("name"=>"Ravindra", "surname"=>"Miyani","hobby"=>"I love coding and travelling");
+    	return View("biodata::bio",compact("user_information"));
     }
 
 }
+
+?>

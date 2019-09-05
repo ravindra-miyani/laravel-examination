@@ -5,6 +5,7 @@
 
   <body>
   	ddddddddd , {{ $user->name }}
+    
   </body>
 
   </html>

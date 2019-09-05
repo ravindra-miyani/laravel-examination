@@ -4,13 +4,23 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/user_information/biodata",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "~3.3",
-        "laravel/framework": "5.5.*",
+        "laravel/framework": "5.8.*",
         "laravel/tinker": "~1.0",
-        "user_information/biodata": "dev-master"
+        "user_information/biodata": "dev-master",
+        "laravelcollective/html":"^5.8"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -30,7 +40,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "user_information\\biodata\\": "packages/user_information/biodata/src/"
         }
     },
     "extra": {
@@ -55,14 +66,5 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/user_information/biodata",
-            "options": {
-                "symlink": true
-            }
-        }
-    ]
+    }
 }
