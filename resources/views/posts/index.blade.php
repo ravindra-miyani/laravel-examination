@@ -1,12 +1,6 @@
 @extends('layout.main')
-
 @section('content')
-
-
-
         <div class="col-sm-8 blog-main">
-
-
         @if($fld = session('message'))
         <div class="alert alert-success">
           {{  $fld }}
@@ -17,7 +11,6 @@
             <h2 class="blog-post-title">
             <a href="/group/{{ $post->id }}" >{{$post->title}}</a>
             </h2>
-
             <p class="blog-post-meta">
             @if(isset($post->user->name ))
             {{ $post->user->name }} on
@@ -27,12 +20,5 @@
             <p>{{$post->body}}</p>
             @endforeach
           </div>
-
         </div>
-
-
-
-
-
-
 @endsection

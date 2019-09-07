@@ -25,7 +25,7 @@
     @yield('content')
       @if(Auth::check())
       @include('includes.sidebar')
-    @endif
+      @endif
 
 </div>
 </div>

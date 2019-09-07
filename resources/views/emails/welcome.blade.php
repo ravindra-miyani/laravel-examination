@@ -4,7 +4,7 @@
   </head>
 
   <body>
-  	ddddddddd , {{ $user->name }}
+  	Hello , {{ $user->name }}
     
   </body>
 

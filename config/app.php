@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\MessageServiceProvider::class,
         App\Providers\AgreedServiceProvider::class,
+        user_information\biodata\BiodataServiceProvider::class,
        
         
 

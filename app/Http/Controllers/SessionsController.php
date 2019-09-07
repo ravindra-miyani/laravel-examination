@@ -12,9 +12,12 @@ class SessionsController extends Controller
     {
     	$this->middleware('guest',['except'=>'destroy']);
     }
-     public function create(){
+
+    public function create()
+    {
 		return view('sessions.create');    	
     }
+
     public function store()
     { 
     	$this->validate(request(),[
@@ -30,6 +33,7 @@ class SessionsController extends Controller
     	}
     	return redirect('/');
     }
+    
     public function destroy()
     {
     	auth()->logout();
